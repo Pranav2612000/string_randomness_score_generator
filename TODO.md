@@ -1,0 +1,6 @@
+- Create a README.md
+- Prevent crash when unknown characters are found
+- Create a npm package
+- Add cli support to npm package
+- Create a website to make it easier to test
+- Create an api to make it easier to consume
