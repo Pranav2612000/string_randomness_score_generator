@@ -19,5 +19,25 @@ class Model {
             i++;
         }
     }
+
+    score(word) {
+        const wordLength = word.length;
+        word = word.toLowerCase();
+
+        const wordArray = [ '<.>', ...word.split(''), '<.>' ];
+
+        let logLikelihood = 0;
+        for (let i = 1; i < wordLength; i++ ) {
+            const ix1 = this.charMap[wordArray[i-1]];
+            const ix2 = this.charMap[wordArray[i]];
+
+            const prob = this.probabilities[ix1][ix2];
+            const logProb = Math.log(prob);
+            logLikelihood += logProb;
+        }
+
+        const nll = -logLikelihood;
+        return ( nll / wordLength );
+    }
 }
 module.exports = new Model;
