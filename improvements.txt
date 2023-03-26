@@ -1,0 +1,4 @@
+- Use ML to create and use a n-gram model
+- Add better support for numbers
+- Add support for keyboard layout strings
+- Better support for shorter strings
