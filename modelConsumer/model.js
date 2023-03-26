@@ -21,10 +21,10 @@ class Model {
     }
 
     score(word) {
-        const wordLength = word.length;
         word = word.toLowerCase();
 
         const wordArray = [ '<.>', ...word.split(''), '<.>' ];
+        const wordLength = wordArray.length;
 
         let logLikelihood = 0;
         for (let i = 1; i < wordLength; i++ ) {
