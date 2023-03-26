@@ -1,4 +1,4 @@
-const defaultModelFile = require('../data/model.json');
+const defaultModelFile = require('./model/model.json');
 
 class Model {
     probabilities = [];
