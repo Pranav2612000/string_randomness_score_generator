@@ -10,7 +10,8 @@ const main = () => {
         "12345",
         "qwertyuiop",
         "qazwsxedcrfvtgbyhn",
-        "key-Axkljh408834j7"
+        "key-Axkljh408834j7",
+        "Key-^jkfah^_(_()_)(*)"
     ];
     const outputs = inputs.map(x => ({ word: x, score: Model.score(x)}));
     console.log(outputs);

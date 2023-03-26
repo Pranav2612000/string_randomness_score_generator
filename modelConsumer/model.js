@@ -23,7 +23,11 @@ class Model {
     score(word) {
         word = word.toLowerCase();
 
-        const wordArray = [ '<.>', ...word.split(''), '<.>' ];
+        const wordArray = [
+            '<.>',
+            ...word.split('').filter(ch => Object.keys(this.charMap).includes(ch)),
+            '<.>'
+        ];
         const wordLength = wordArray.length;
 
         let logLikelihood = 0;
