@@ -8,7 +8,7 @@ A lightweight, 0 dependency package to generate a randomness score for a string.
 ## Usage
 The tool returns back a randomness score for a string. You can tune the conditions according to your use case, but, generally, a score above 4 signifies that the input string is random.
 ### NPM package
-- Install the npm package [COMING SOON]
+- Install the npm [package](https://www.npmjs.com/package/randomness-score-generator)
 - Import and use it in your code like
 ```
 const Model = require('./Model');
