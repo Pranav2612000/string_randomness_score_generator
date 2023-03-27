@@ -1,6 +1,6 @@
 {
   "name": "randomness-score-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A no-dependencies package to check if a string is wordlike or random",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,5 @@
   "bugs": {
     "url": "https://github.com/Pranav2612000/string_randomness_score_generator/issues"
   },
-  "homepage": "https://github.com/Pranav2612000/string_randomness_score_generator#readme"
+  "homepage": "https://github.com/Pranav2612000/string_randomness_score_generator"
 }
