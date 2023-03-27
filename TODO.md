@@ -1,6 +1,8 @@
-- Create a README.md
-- Prevent crash when unknown characters are found
-- Create a npm package
+- [DONE] Create a README.md
+- [DONE] Prevent crash when unknown characters are found
+- [DONE] Create & publish a npm package
+- [DONE] Add licence
 - Add cli support to npm package
 - Create a website to make it easier to test
 - Create an api to make it easier to consume
+- Remove test.js from the build
