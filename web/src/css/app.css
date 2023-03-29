@@ -1,3 +1,16 @@
 body {
-    background-color: #FDF9F9
+    background-color: #FDF9F9;
+    font-family: "Major Mono Display";
+    margin: 0px;
+}
+
+main {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 72px;
+    text-align: center;
 }
