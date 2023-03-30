@@ -5,6 +5,7 @@ body {
 }
 
 main {
+    height: calc(100vh-340px);
     padding-top: 150px;
     padding-bottom: 150px;
 }
@@ -13,4 +14,16 @@ h1 {
     margin: 0px;
     font-size: 72px;
     text-align: center;
+}
+
+p {
+  margin: 0px;
+}
+
+footer {
+    margin: 0px;
+    box-sizing: border-box;
+    background: #E6C7C7;
+
+    height: 40px;
 }
