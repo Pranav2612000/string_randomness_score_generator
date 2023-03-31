@@ -16,6 +16,11 @@ function _build() {
         .pipe(bro())
         .pipe(dest('./dist'));
 
+    // take every JS file, browserify them and put them into ./dist
+    src('./src/*.js')
+        .pipe(bro())
+        .pipe(dest('./dist'));
+
     // take every JS script, and put them into ./dist
     src('./src/scripts/**/*.js')
         .pipe(dest('./dist'));
