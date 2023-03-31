@@ -32,9 +32,9 @@ function _build() {
 
 // our watch function
 function _watch() {
-    watch(['src/*/*.js', 'src/*/*.css', 'src/**/*.html'], _build);
-    watch(['src/*/*.js', 'src/*/*.css', 'src/**/*.html']).on('change', _build);
-    watch(['src/*/*.js', 'src/*/*.css', 'src/**/*.html']).on('change', browserSync.reload);
+    watch(['src/**/*.js', 'src/*/*.css', 'src/**/*.html'], _build);
+    watch(['src/**/*.js', 'src/*/*.css', 'src/**/*.html']).on('change', _build);
+    watch(['src/**/*.js', 'src/*/*.css', 'src/**/*.html']).on('change', browserSync.reload);
 }
 
 // our serve function
