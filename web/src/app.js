@@ -1,5 +1,11 @@
 'use strict'
 let Alpine = require('alpinejs');
+const stringRandomnessScoreGenerator = require("randomness-score-generator");
 
-window.Alpine = Alpine
-Alpine.default.start()
+Alpine.default.start();
+stringRandomnessScoreGenerator.loadModel();
+
+window.Alpine = Alpine;
+window.getScore = (x) => {
+  return stringRandomnessScoreGenerator.score(x);
+}
