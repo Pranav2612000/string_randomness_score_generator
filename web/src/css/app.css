@@ -116,3 +116,9 @@ section.result {
   position: absolute;
   right: 1rem;
 }
+.npm-icon {
+  display: inline-block;
+
+  position: absolute;
+  left: 1rem;
+}
