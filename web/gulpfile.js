@@ -28,6 +28,10 @@ function _build() {
     // take every HTML and CSS and put them into ./dist
     src(['./src/**/*.html', './src/**/*.css'])
         .pipe(dest('./dist'));
+
+    // Move the public files into ./dist/public
+    src(['./public/*'])
+        .pipe(dest('./dist/public'));
 }
 
 // our watch function
