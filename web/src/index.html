@@ -24,7 +24,7 @@
         <section class="result" x-show="inputString">
           <div>
             <p class="text-md">The string is </p>
-            <p class="text-lg text-primary">Random</p>
+            <p class="text-lg text-primary" x-text="score <= 4 ? 'Wordlike' : 'Random'"></p>
           </div>
           <div>
             <p class="text-md">with a score of </p>
