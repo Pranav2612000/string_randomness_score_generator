@@ -106,9 +106,14 @@ section.result {
   justify-content: center;
 }
 
-.result p {
-  margin-left: 1rem;
+.result div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1rem;
 }
+
 
 .github-icon {
   display: inline-block;
@@ -121,4 +126,46 @@ section.result {
 
   position: absolute;
   left: 1rem;
+}
+
+@media (max-width:480px)  {
+  h1 {
+      margin: 0px;
+      font-size: 36px;
+      text-align: center;
+  }
+
+  input {
+      font-size: 18px;
+  }
+
+  .text-md {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .text-sm {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  footer {
+    position: static;
+  }
+
+  section.result {
+    gap: 2rem;
+  }
+
+  .result div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .github-icon {
+    top: 1rem;
+  }
+  .npm-icon {
+    top: 1rem;
+  }
 }
