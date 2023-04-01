@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="./app.js"></script>
 </head>
-<body x-data="{ inputString: '' }">
-    <main x-effect="console.log('String randomness score is '+ getScore(inputString))">
+<body x-data="{ inputString: '', score: 0.0 }">
+    <main x-effect="score = parseFloat(getScore(inputString).toFixed(5))">
         <h1>Randomness Score</h1>
         <form>
           <input
@@ -28,7 +28,7 @@
           </div>
           <div>
             <p class="text-md">with a score of </p>
-            <p class="text-lg text-primary">4.12395</p>
+            <p class="text-lg text-primary" x-text="score"></p>
           </div>
         </section>
     </main>
