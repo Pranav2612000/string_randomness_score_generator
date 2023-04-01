@@ -92,6 +92,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 
 footer div {
@@ -106,4 +108,11 @@ section.result {
 
 .result p {
   margin-left: 1rem;
+}
+
+.github-icon {
+  display: inline-block;
+
+  position: absolute;
+  right: 1rem;
 }
