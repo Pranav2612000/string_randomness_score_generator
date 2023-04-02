@@ -7,6 +7,7 @@ A lightweight, 0 dependency package to generate a randomness score for a string.
 
 ## Usage
 The tool returns back a randomness score for a string. You can tune the conditions according to your use case, but, generally, a score above 4 signifies that the input string is random.
+If you want to try out the tool just for a word, you can also test it out on https://randomness-score-generator.web.app/
 ### NPM package
 - Install the npm [package](https://www.npmjs.com/package/randomness-score-generator)
 - Import and use it in your code like
